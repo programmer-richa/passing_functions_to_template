@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>First</title>
+</head>
+<body>
+
+    <h1>Names in upper case</h1>
+    <ul>
+        {{range  .}}
+            <li>{{uc .Name}}</li>
+        {{end}}
+    </ul>
+    <h1>First 3 alphabets of names</h1>
+    <ul>
+        {{range .}}
+            <li>{{ft .Name}}</li>
+        {{end}}
+    </ul>    
+</body>
+</html>
